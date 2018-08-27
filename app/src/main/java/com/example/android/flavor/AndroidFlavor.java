@@ -30,6 +30,7 @@ public class AndroidFlavor {
     // Drawable resource ID
     private int mImageResourceId;
 
+
     /*
     * Create a new AndroidFlavor object.
     *
@@ -37,6 +38,7 @@ public class AndroidFlavor {
     * @param vNumber is the corresponding Android version number (e.g. 2.3-2.7)
     * @param image is drawable reference ID that corresponds to the Android version
     * */
+    //Call the constructor method to initialize the global member variables at the top based on the values we pass into the constructor.
     public AndroidFlavor(String vName, String vNumber, int imageResourceId)
     {
         mVersionName = vName;
@@ -44,6 +46,8 @@ public class AndroidFlavor {
         mImageResourceId = imageResourceId;
     }
 
+
+    //The global member variables at the top are private, so we need to create public Getter methods for other classes to access them.
     /**
      * Get the name of the Android version
      */
